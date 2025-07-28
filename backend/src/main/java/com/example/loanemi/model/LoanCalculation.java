@@ -4,9 +4,6 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import lombok.Data;
-
-@Data
 @Entity
 public class LoanCalculation {
 
@@ -26,5 +23,45 @@ public class LoanCalculation {
     }
 
     public LoanCalculation() {
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public double getPrincipal() {
+        return principal;
+    }
+
+    public void setPrincipal(double principal) {
+        this.principal = principal;
+    }
+
+    public double getInterestRate() {
+        return interestRate;
+    }
+
+    public void setInterestRate(double interestRate) {
+        this.interestRate = interestRate;
+    }
+
+    public int getTenure() {
+        return tenure;
+    }
+
+    public void setTenure(int tenure) {
+        this.tenure = tenure;
+    }
+
+    public double getEmi() {
+        return emi;
+    }
+
+    public void setEmi(double emi) {
+        this.emi = emi;
     }
 }
